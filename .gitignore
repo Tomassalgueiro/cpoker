@@ -1,0 +1,15 @@
+build/
+bin/
+obj/
+
+CmakeCache.txt
+CMakeFiles/
+
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+
+.DS_Store
+Thumbs.db
