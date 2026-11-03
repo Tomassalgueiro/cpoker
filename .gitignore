@@ -4,6 +4,7 @@ obj/
 
 CmakeCache.txt
 CMakeFiles/
+compile_commands.json
 
 *.o
 *.obj
