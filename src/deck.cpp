@@ -20,3 +20,12 @@ void Deck::shuffle() {
 
 	std::shuffle(cards.begin(), cards.end(), gen);
 }
+
+std::optional<Card> Deck::dealCards() {
+
+	if (currentCard >= 52) {
+		return std::nullopt;
+	}
+
+	return cards[currentCard++];
+}

@@ -6,8 +6,13 @@
 int main() {
 	Deck deck;
 	deck.shuffle();
+	std::optional<Card> var = deck.dealCards();
 
-	for (const Card& card : deck){
-		std::cout << card.getSuit() << " " << card.getValue() << std::endl;
+	if (var != std::nullopt) {
+		std::cout << var->getSuit() << " " << var->getValue() << std::endl;
 	}
+	else {
+		std::cout << " lol " << std::endl;
+	}
+
 }
