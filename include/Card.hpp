@@ -10,10 +10,11 @@ constexpr std::array<int, 13> VALUES = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1
 class Card {
 
     private:
-	int value; 
-        char suit;
+        int value = 0; 
+        char suit = '\0';
 
     public:
+        Card() = default;
         Card(int value, char suit);
 
         char getSuit() const;
