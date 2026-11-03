@@ -17,6 +17,8 @@ class Deck {
         auto begin() const { return cards.begin(); };
         auto end() const { return cards.end(); };
 
+	void shuffle();
+
 };
 
 #endif

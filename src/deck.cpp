@@ -1,5 +1,8 @@
 #include "Deck.hpp"
 
+#include <algorithm>
+#include <random>
+
 Deck::Deck() {
     int index = 0;
 
@@ -9,4 +12,11 @@ Deck::Deck() {
         index++;
       }
     }
+}
+
+void Deck::shuffle() {
+	std::random_device rd;
+	std::mt19937 gen(rd());
+
+	std::shuffle(cards.begin(), cards.end(), gen);
 }
