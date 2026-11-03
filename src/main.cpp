@@ -1,7 +1,13 @@
 #include <iostream>
+#include "Deck.hpp"
+#include "Card.hpp"
 
 using namespace std;
 
 int main() {
-  cout << "Hello world" << endl;
+  Deck deck;
+  for (Card card : deck){
+    cout << card.getSuit() << " " << card.getValue() << endl;
+  }
+
 }
